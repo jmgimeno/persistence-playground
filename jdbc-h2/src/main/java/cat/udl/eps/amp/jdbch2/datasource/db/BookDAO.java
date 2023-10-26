@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface BookDAO {
     List<Book> allBoks() throws SQLException;
+    long addBook(Book book) throws SQLException;
 }

@@ -1,11 +1,16 @@
 package cat.udl.eps.amp.jdbch2.datasource.domain;
 
 public class Book {
-    private long id;
+    private long id = -1; // -1 means not in database
     private String title;
     private String author;
 
     public Book() {
+    }
+
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
     }
 
     public Book(long id, String title, String author) {
