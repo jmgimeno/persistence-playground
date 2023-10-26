@@ -11,6 +11,7 @@
 
     <modules>
         <module>jdbc-h2</module>
+        <module>testcontainers-postgresql</module>
     </modules>
 
     <properties>
