@@ -1,6 +1,7 @@
 package cat.udl.eps.amp.jdbch2.datasource;
 
 import cat.udl.eps.amp.jdbch2.datasource.db.BookDAO;
+import cat.udl.eps.amp.jdbch2.datasource.db.JdbcBookDAO;
 import cat.udl.eps.amp.jdbch2.datasource.domain.Book;
 import org.h2.jdbcx.JdbcConnectionPool;
 
@@ -14,7 +15,7 @@ public class DumpBooks {
 
     public static void main(String[] args) {
         try {
-            var bookDAO = new BookDAO(dataSource);
+            BookDAO bookDAO = new JdbcBookDAO(dataSource);
             List<Book> books = bookDAO.allBoks();
             System.out.println(books);
         } catch (Exception e) {
