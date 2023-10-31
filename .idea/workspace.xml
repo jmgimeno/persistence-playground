@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5adc0b4d-c196-46cc-a653-e90a524fb9ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc-h2/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcontainers-postgresql/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc-h2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcontainers-postgresql/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +70,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "gradle",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "temurin-21",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.41836736",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -105,9 +92,9 @@
       <recent name="cat.udl.eps.amp.jdbch2.datasource" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.persistence-playground [build]">
-    <configuration name="AddBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.AddBooks" />
+  <component name="RunManager" selected="Application.DumpBooks">
+    <configuration name="DumpBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.DumpBooks" />
       <module name="persistence-playground.jdbc-h2.main" />
       <extension name="coverage">
         <pattern>
@@ -143,28 +130,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'persistence-playground.testcontainers-postgresql.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":testcontainers-postgresql:test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="persistence-playground [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -177,6 +142,28 @@
         <option name="taskNames">
           <list>
             <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="persistence-playground [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,19 +197,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.AddBooks" />
+      <item itemvalue="Application.DumpBooks" />
+      <item itemvalue="Gradle.persistence-playground [clean]" />
       <item itemvalue="Gradle.CustomerServiceTest" />
-      <item itemvalue="Gradle.Tests in 'persistence-playground.testcontainers-postgresql.test'" />
       <item itemvalue="Gradle.persistence-playground [build]" />
       <item itemvalue="Gradle.persistence-playground [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.persistence-playground [clean]" />
+        <item itemvalue="Application.DumpBooks" />
         <item itemvalue="Gradle.persistence-playground [build]" />
         <item itemvalue="Gradle.CustomerServiceTest" />
         <item itemvalue="Gradle.persistence-playground [test]" />
-        <item itemvalue="Gradle.Tests in 'persistence-playground.testcontainers-postgresql.test'" />
-        <item itemvalue="Application.AddBooks" />
       </list>
     </recent_temporary>
   </component>
