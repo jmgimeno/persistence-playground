@@ -6,6 +6,12 @@ repositories {
     mavenCentral()
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 dependencies {
     testImplementation("org.testcontainers:postgresql:1.19.1")
     testImplementation("org.testcontainers:junit-jupiter:1.19.1")
