@@ -7,6 +7,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.h2database:h2:2.2.224")
-    implementation("org.flywaydb:flyway-core:10.0.0")
+    implementation("com.h2database:h2:2.2.220")
+    implementation("org.flywaydb:flyway-core:9.22.3")
 }
