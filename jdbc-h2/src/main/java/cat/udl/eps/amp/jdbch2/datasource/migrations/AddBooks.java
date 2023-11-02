@@ -1,4 +1,4 @@
-package cat.udl.eps.amp.jdbch2.datasource;
+package cat.udl.eps.amp.jdbch2.datasource.migrations;
 
 import cat.udl.eps.amp.jdbch2.datasource.db.BookDAO;
 import cat.udl.eps.amp.jdbch2.datasource.db.JdbcBookDAO;
@@ -8,14 +8,18 @@ import org.h2.jdbcx.JdbcConnectionPool;
 import javax.sql.DataSource;
 import java.util.List;
 
-public class DumpBooks {
+public class AddBooks {
 
+    public static final String url = "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1";
     static DataSource dataSource = JdbcConnectionPool.create(
-            "jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'jdbc-h2/scripts/init.sql'", "sa", "sa");
+            url, "sa", null);
 
     public static void main(String[] args) {
         try {
+            FlyWayMigrations.initDatabase(dataSource);
             BookDAO bookDAO = new JdbcBookDAO(dataSource);
+            long newID = bookDAO.addBook(new Book("The Lord of the Rings", "J.R.R. Tolkien"));
+            System.out.println("newID = " + newID);
             List<Book> books = bookDAO.allBoks();
             System.out.println(books);
         } catch (Exception e) {

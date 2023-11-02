@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5adc0b4d-c196-46cc-a653-e90a524fb9ac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/migrations/AddBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/migrations/DumpBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/migrations/FlyWayMigrations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-h2/src/main/resources/db/migration/V1__Create_tutorials_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc-h2/src/main/resources/db/migration/V2__Add_tutorials.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-h2/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-h2/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/AddBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/initscript/AddBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/DumpBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc-h2/src/main/java/cat/udl/eps/amp/jdbch2/datasource/initscript/DumpBooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +57,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -63,24 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "temurin-21",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.41836736",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-21&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41836736&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="cat.udl.eps.amp.jdbch2.datasource.migrations.FlyWayMigrations" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="cat.udl.eps.amp.jdbch2.datasource.db" />
@@ -89,16 +100,17 @@
       <recent name="cat.udl.eps.amp.testcontainers.postgresql.db" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cat.udl.eps.amp.jdbch2.datasource.migrations" />
       <recent name="cat.udl.eps.amp.jdbch2.datasource" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DumpBooks">
-    <configuration name="DumpBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.DumpBooks" />
+  <component name="RunManager" selected="Application.AddBooks">
+    <configuration name="AddBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.migrations.AddBooks" />
       <module name="persistence-playground.jdbc-h2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cat.udl.eps.amp.jdbch2.datasource.*" />
+          <option name="PATTERN" value="cat.udl.eps.amp.jdbch2.datasource.migrations.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,29 +118,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":testcontainers-postgresql:test" />
-            <option value="--tests" />
-            <option value="&quot;cat.udl.eps.amp.testcontainers.postgresql.db.CustomerServiceTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="DumpBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.initscript.DumpBooks" />
+      <module name="persistence-playground.jdbc-h2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.udl.eps.amp.jdbch2.datasource.initscript.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cat.udl.eps.amp.jdbch2.datasource.migrations.DumpBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cat.udl.eps.amp.jdbch2.datasource.migrations.DumpBooks" />
+      <module name="persistence-playground.jdbc-h2.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cat.udl.eps.amp.jdbch2.datasource.migrations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="persistence-playground [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -174,42 +188,20 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="persistence-playground [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Application.AddBooks" />
+      <item itemvalue="Application.cat.udl.eps.amp.jdbch2.datasource.migrations.DumpBooks" />
       <item itemvalue="Application.DumpBooks" />
       <item itemvalue="Gradle.persistence-playground [clean]" />
-      <item itemvalue="Gradle.CustomerServiceTest" />
       <item itemvalue="Gradle.persistence-playground [build]" />
-      <item itemvalue="Gradle.persistence-playground [test]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AddBooks" />
+        <item itemvalue="Application.cat.udl.eps.amp.jdbch2.datasource.migrations.DumpBooks" />
         <item itemvalue="Gradle.persistence-playground [clean]" />
         <item itemvalue="Application.DumpBooks" />
         <item itemvalue="Gradle.persistence-playground [build]" />
-        <item itemvalue="Gradle.CustomerServiceTest" />
-        <item itemvalue="Gradle.persistence-playground [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -270,8 +262,27 @@
       <option name="project" value="LOCAL" />
       <updated>1698320693105</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Moved to gradle">
+      <option name="closed" value="true" />
+      <created>1698753363606</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698753363606</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A simple example using h2 and jdbc" />
@@ -280,7 +291,9 @@
     <MESSAGE value="Added example of using testcontainers with postgresql" />
     <MESSAGE value="Added junit5 integration for testcontainers" />
     <MESSAGE value="Changed postgresql dependency scope to runtime" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed postgresql dependency scope to runtime" />
+    <MESSAGE value="Changed to gradle" />
+    <MESSAGE value="Moved to gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved to gradle" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
