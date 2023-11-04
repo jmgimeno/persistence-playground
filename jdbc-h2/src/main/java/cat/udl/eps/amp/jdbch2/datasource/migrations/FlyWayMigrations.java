@@ -11,6 +11,7 @@ public class FlyWayMigrations {
         Logger.getLogger("org.flywaydb").setLevel(Level.WARNING);
         Flyway flyway = Flyway
                 .configure()
+                .loggers("slf4j")
                 .dataSource(dataSource)
                 .load();
         flyway.migrate();
