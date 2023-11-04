@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 
 public class FlyWayMigrations {
     static void initDatabase(DataSource dataSource) {
-        Logger.getLogger("org.flywaydb").setLevel(Level.WARNING);
         Flyway flyway = Flyway
                 .configure()
                 .loggers("slf4j")

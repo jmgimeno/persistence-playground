@@ -11,6 +11,10 @@ import java.util.logging.Logger;
 
 public class AddBooks {
 
+    static {
+        System.setProperty("org.slf4j.simpleLogger.log.org.flywaydb", "warn");
+    }
+
     private static final Logger logger = Logger.getLogger(AddBooks.class.getName());
     private static final String url = "jdbc:h2:mem:test";
     private static final DataSource dataSource = JdbcConnectionPool.create(
