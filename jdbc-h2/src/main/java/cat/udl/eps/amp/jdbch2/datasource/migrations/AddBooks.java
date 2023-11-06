@@ -16,7 +16,7 @@ public class AddBooks {
     }
 
     private static final Logger logger = Logger.getLogger(AddBooks.class.getName());
-    private static final String url = "jdbc:h2:./jdbc-h2/dbfiles/test";
+    private static final String url = "jdbc:h2:./jdbc-h2/dbfiles/test;AUTO_SERVER=TRUE";
     private static final DataSource dataSource = JdbcConnectionPool.create(
             url, "sa", null);
 
