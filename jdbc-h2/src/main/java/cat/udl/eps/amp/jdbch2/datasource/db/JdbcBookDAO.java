@@ -70,4 +70,17 @@ public class JdbcBookDAO implements BookDAO {
             }
         }
     }
+
+    @Override
+    public void updateBook(Book book) throws SQLException {
+        if (book.getId() == -1) throw new IllegalArgumentException("book must have id");
+        String sql = "UPDATE tutorials_tbl SET title = ?, author = ? WHERE id = ?";
+        try (var connection = dataSource.getConnection();
+             var statement = connection.prepareStatement(sql)) {
+            statement.setString(1, book.getTitle());
+            statement.setString(2, book.getAuthor());
+            statement.setLong(3, book.getId());
+            statement.executeUpdate();
+        }
+    }
 }

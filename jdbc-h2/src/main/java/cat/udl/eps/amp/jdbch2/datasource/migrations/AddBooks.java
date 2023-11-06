@@ -27,6 +27,9 @@ public class AddBooks {
             System.out.println("newID = " + newID);
             Book newAdded = bookDAO.findById(newID).orElseThrow();
             System.out.println(newAdded);
+            newAdded.setAuthor("J.R.R. Tolkien (edited)");
+            bookDAO.updateBook(newAdded);
+            System.out.println(bookDAO.allBoks());
         } catch (Exception e) {
             logger.severe(e.getMessage());
         }
