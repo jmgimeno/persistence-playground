@@ -2,13 +2,12 @@ package cat.udl.eps.amp.jpa.h2.db;
 
 import cat.udl.eps.amp.jpa.h2.domain.Book;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
 public interface BookDAO {
-    List<Book> allBoks() throws SQLException;
-    long addBook(Book book) throws SQLException;
-    Optional<Book> findById(long id) throws SQLException;
-    void updateBook(Book book) throws SQLException;
+    List<Book> allBoks();
+    long addBook(Book book);
+    Optional<Book> findById(long id);
+    void updateBook(Book book);
 }

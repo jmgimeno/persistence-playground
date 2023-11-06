@@ -1,7 +1,6 @@
 package cat.udl.eps.amp.jpa.h2.domain;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.IdGeneratorType;
 
 @Entity
 @Table(name = "tutorials_tbl")
