@@ -1,9 +1,16 @@
 plugins {
     application
+    idea
 }
 
 repositories {
     mavenCentral()
+}
+
+idea {
+    module {
+        setDownloadJavadoc(true)
+    }
 }
 
 dependencies {

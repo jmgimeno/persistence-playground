@@ -3,8 +3,10 @@ package cat.udl.eps.amp.jpa.h2.db;
 import cat.udl.eps.amp.jpa.h2.domain.Book;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.FlushModeType;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 public class JPABookDAO implements BookDAO {
@@ -13,6 +15,7 @@ public class JPABookDAO implements BookDAO {
 
     public JPABookDAO(EntityManager entityManager) {
         this.entityManager = entityManager;
+        this.entityManager.setFlushMode(FlushModeType.AUTO);
     }
 
     @Override
@@ -22,12 +25,15 @@ public class JPABookDAO implements BookDAO {
     }
 
     @Override
-    public long addBook(Book book) {
+    public Long addBook(Book book) {
+        if (book.getId() != null)
+            throw new IllegalArgumentException("Book already has an id");
         EntityTransaction transaction = entityManager.getTransaction();
         transaction.begin();
         entityManager.persist(book);
+        Long newId = book.getId();
         transaction.commit();
-        return book.getId();
+        return newId;
     }
 
     @Override
@@ -41,6 +47,7 @@ public class JPABookDAO implements BookDAO {
 
     @Override
     public void updateBook(Book book) {
+        Objects.requireNonNull(book.getId(), "Book id cannot be null");
         entityManager.merge(book);
     }
 }

@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface BookDAO {
     List<Book> allBoks();
-    long addBook(Book book);
+    Long addBook(Book book);
     Optional<Book> findById(long id);
     void updateBook(Book book);
 }

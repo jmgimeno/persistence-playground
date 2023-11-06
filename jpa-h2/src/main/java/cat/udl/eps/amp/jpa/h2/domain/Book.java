@@ -9,7 +9,7 @@ public class Book {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     @Column(name = "id", updatable = false, nullable = false)
-    private Long id = -1L; // -1 means not in database
+    private Long id;
 
     @Column(name = "title", nullable = false)
     private String title;
@@ -21,17 +21,16 @@ public class Book {
     }
 
     public Book(String title, String author) {
-        this.title = title;
-        this.author = author;
-    }
-
-    public Book(long id, String title, String author) {
-        setId(id);
         setTitle(title);
         setAuthor(author);
     }
 
-    public long getId() {
+    public Book(long id, String title, String author) {
+        this(title, author);
+        setId(id);
+    }
+
+    public Long getId() {
         return id;
     }
 
