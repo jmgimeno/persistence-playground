@@ -10,7 +10,6 @@ import org.flywaydb.core.Flyway;
 import org.h2.jdbcx.JdbcConnectionPool;
 
 import javax.sql.DataSource;
-import java.sql.SQLException;
 
 public class Main {
 
