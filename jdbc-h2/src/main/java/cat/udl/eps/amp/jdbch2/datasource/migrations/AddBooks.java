@@ -26,8 +26,8 @@ public class AddBooks {
             BookDAO bookDAO = new JdbcBookDAO(dataSource);
             long newID = bookDAO.addBook(new Book("The Lord of the Rings", "J.R.R. Tolkien"));
             System.out.println("newID = " + newID);
-            List<Book> books = bookDAO.allBoks();
-            System.out.println(books);
+            Book newAdded = bookDAO.findById(newID).orElseThrow();
+            System.out.println(newAdded);
         } catch (Exception e) {
             logger.severe(e.getMessage());
         }

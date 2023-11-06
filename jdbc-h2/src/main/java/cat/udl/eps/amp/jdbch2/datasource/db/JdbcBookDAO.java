@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class JdbcBookDAO implements BookDAO {
     private final DataSource dataSource;
@@ -47,6 +48,24 @@ public class JdbcBookDAO implements BookDAO {
                     return id;
                 } else {
                     throw new SQLException("Creating user failed, no ID obtained.");
+                }
+            }
+        }
+    }
+
+    @Override
+    public Optional<Book> findById(long id) throws SQLException {
+        String sql = "SELECT * FROM tutorials_tbl WHERE id = ?";
+        try (var connection = dataSource.getConnection();
+             var statement = connection.prepareStatement(sql)) {
+            statement.setLong(1, id);
+            try (var resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    var book = new Book(resultSet.getLong("id"), resultSet.getString("title"),
+                            resultSet.getString("author"));
+                    return Optional.of(book);
+                } else {
+                    return Optional.empty();
                 }
             }
         }
