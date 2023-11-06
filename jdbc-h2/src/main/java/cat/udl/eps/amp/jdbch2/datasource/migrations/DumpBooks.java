@@ -16,7 +16,7 @@ public class DumpBooks {
     }
 
     private static final Logger logger = Logger.getLogger(DumpBooks.class.getName());
-    private static final String url = "jdbc:h2:mem:test";
+    private static final String url = "jdbc:h2:./jdbc-h2/dbfiles/test";
     private static final DataSource dataSource = JdbcConnectionPool.create(
             url, "sa", null);
 

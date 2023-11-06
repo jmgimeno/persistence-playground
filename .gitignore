@@ -154,3 +154,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# H2 Database
+/jdbc-h2/dbfiles/

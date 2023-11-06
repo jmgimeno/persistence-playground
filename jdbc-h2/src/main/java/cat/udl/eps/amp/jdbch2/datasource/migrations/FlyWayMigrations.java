@@ -10,7 +10,9 @@ public class FlyWayMigrations {
                 .configure()
                 .loggers("slf4j")
                 .dataSource(dataSource)
+                .cleanDisabled(false)
                 .load();
+        flyway.clean();
         flyway.migrate();
     }
 }
