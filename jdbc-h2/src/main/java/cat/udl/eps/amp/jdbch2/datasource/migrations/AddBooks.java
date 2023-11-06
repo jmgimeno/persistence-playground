@@ -6,7 +6,6 @@ import cat.udl.eps.amp.jdbch2.datasource.domain.Book;
 import org.h2.jdbcx.JdbcConnectionPool;
 
 import javax.sql.DataSource;
-import java.util.List;
 import java.util.logging.Logger;
 
 public class AddBooks {
