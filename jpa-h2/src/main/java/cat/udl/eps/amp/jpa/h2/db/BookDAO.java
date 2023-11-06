@@ -1,6 +1,6 @@
-package cat.udl.eps.amp.jdbch2.datasource.db;
+package cat.udl.eps.amp.jpa.h2.db;
 
-import cat.udl.eps.amp.jdbch2.datasource.domain.Book;
+import cat.udl.eps.amp.jpa.h2.domain.Book;
 
 import java.sql.SQLException;
 import java.util.List;

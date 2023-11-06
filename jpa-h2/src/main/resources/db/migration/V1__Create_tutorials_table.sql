@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS tutorials_tbl;
+
+CREATE TABLE tutorials_tbl
+(
+    id     BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    title  VARCHAR(50) NOT NULL,
+    author VARCHAR(30) NOT NULL
+);

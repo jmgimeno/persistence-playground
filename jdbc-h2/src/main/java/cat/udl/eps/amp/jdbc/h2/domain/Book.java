@@ -1,4 +1,4 @@
-package cat.udl.eps.amp.jdbch2.datasource.domain;
+package cat.udl.eps.amp.jdbc.h2.domain;
 
 public class Book {
     private long id = -1; // -1 means not in database

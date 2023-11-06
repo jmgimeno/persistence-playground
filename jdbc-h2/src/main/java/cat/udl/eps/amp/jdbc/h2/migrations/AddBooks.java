@@ -1,8 +1,8 @@
-package cat.udl.eps.amp.jdbch2.datasource.migrations;
+package cat.udl.eps.amp.jdbc.h2.migrations;
 
-import cat.udl.eps.amp.jdbch2.datasource.db.BookDAO;
-import cat.udl.eps.amp.jdbch2.datasource.db.JdbcBookDAO;
-import cat.udl.eps.amp.jdbch2.datasource.domain.Book;
+import cat.udl.eps.amp.jdbc.h2.db.BookDAO;
+import cat.udl.eps.amp.jdbc.h2.db.JdbcBookDAO;
+import cat.udl.eps.amp.jdbc.h2.domain.Book;
 import org.h2.jdbcx.JdbcConnectionPool;
 
 import javax.sql.DataSource;

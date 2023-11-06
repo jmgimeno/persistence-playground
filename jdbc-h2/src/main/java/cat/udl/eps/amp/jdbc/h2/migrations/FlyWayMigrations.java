@@ -1,4 +1,4 @@
-package cat.udl.eps.amp.jdbch2.datasource.migrations;
+package cat.udl.eps.amp.jdbc.h2.migrations;
 
 import org.flywaydb.core.Flyway;
 
