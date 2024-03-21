@@ -25,7 +25,7 @@ public class JdbcBookDAO implements BookDAO {
             while (resultSet.next()) {
                 var book = new Book(resultSet.getLong("id"), resultSet.getString("title"),
                         resultSet.getString("author"
-                ));
+                        ));
                 books.add(book);
             }
             return books;
