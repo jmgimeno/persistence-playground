@@ -9,7 +9,7 @@ repositories {
 
 idea {
     module {
-        setDownloadJavadoc(true)
+        isDownloadJavadoc = true
     }
 }
 
