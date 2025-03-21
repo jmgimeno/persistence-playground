@@ -19,7 +19,7 @@ public class AddBooks {
             long newID = bookDAO.addBook(new Book("The Lord of the Rings", "J.R.R. Tolkien"));
             System.out.println("newID = " + newID);
             List<Book> books = bookDAO.allBoks();
-            System.out.println(books);
+            books.forEach(System.out::println);
         } catch (Exception e) {
             e.printStackTrace();
         }

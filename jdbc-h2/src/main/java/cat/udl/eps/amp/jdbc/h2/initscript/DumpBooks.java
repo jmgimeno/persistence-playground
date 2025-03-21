@@ -17,7 +17,7 @@ public class DumpBooks {
         try {
             BookDAO bookDAO = new JdbcBookDAO(dataSource);
             List<Book> books = bookDAO.allBoks();
-            System.out.println(books);
+            books.forEach(System.out::println);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -29,7 +29,7 @@ public class AddBooks {
             System.out.println(newAdded);
             newAdded.setAuthor("J.R.R. Tolkien (edited)");
             bookDAO.updateBook(newAdded);
-            System.out.println(bookDAO.allBoks());
+            bookDAO.allBoks().forEach(System.out::println);
         } catch (Exception e) {
             logger.severe(e.getMessage());
         }

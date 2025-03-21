@@ -23,9 +23,10 @@ public class JdbcBookDAO implements BookDAO {
              var resultSet = statement.executeQuery("SELECT * FROM tutorials_tbl")) {
             var books = new ArrayList<Book>();
             while (resultSet.next()) {
-                var book = new Book(resultSet.getLong("id"), resultSet.getString("title"),
-                        resultSet.getString("author"
-                        ));
+                var book = new Book(
+                        resultSet.getLong("id"),
+                        resultSet.getString("title"),
+                        resultSet.getString("author"));
                 books.add(book);
             }
             return books;
