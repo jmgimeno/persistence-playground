@@ -3,9 +3,10 @@ package cat.udl.eps.amp.testcontainers.postgresql.db;
 import cat.udl.eps.amp.testcontainers.postgresql.domain.Customer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.PostgreSQLContainer;
+
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.postgresql.PostgreSQLContainer;
 
 import java.util.List;
 
@@ -15,8 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CustomerServiceTest {
 
     @Container
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>(
-            "postgres:15-alpine"
+    static PostgreSQLContainer postgres = new PostgreSQLContainer(
+            "postgres:18-alpine"
     );
 
     CustomerService customerService;
